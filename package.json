@@ -1,9 +1,9 @@
 {
-  "name": "starter-node",
-  "version": "1.0.1",
-  "description": "Simple Start Template",
-  "main": "dist/ssprojet.cjs",
-  "module": "dist/ssprojet.mjs",
+  "name": "cranch",
+  "version": "0.0.1",
+  "description": "Craete branch with a random name",
+  "main": "dist/cranch.cjs",
+  "module": "dist/cranch.mjs",
   "types": "dist/src/index.d.ts",
   "scripts": {
     "build": "rollup -c rollup.config.mjs",
