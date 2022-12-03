@@ -3,5 +3,9 @@
     "target": "ESNext",
     "moduleResolution": "node",
     "declaration": true,
+    "types": ["node"],
+    "lib": ["ESNext"],
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
   }
 }

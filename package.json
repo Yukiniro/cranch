@@ -1,6 +1,6 @@
 {
   "name": "cranch",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Craete branch with a random name",
   "main": "dist/cranch.cjs",
   "module": "dist/cranch.mjs",
@@ -15,17 +15,20 @@
     "publish": "npm run test:run && npm run build && npm publish",
     "prepare": "npx husky install"
   },
+  "bin": "dist/cranch.js",
   "keywords": [
-    "vite",
-    "vitest",
-    "docusaurus",
-    "template"
+    "checkout",
+    "branch"
   ],
   "author": "Yukiniro",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Yukiniro/ssprojet"
+    "url": "https://github.com/Yukiniro/cranch"
+  },
+  "dependencies": {
+    "chalk": "4.1.2",
+    "commander": "^9.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",
@@ -34,8 +37,10 @@
     "@babel/preset-typescript": "^7.16.7",
     "@rollup/plugin-babel": "^5.3.1",
     "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-json": "^5.0.2",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.1",
+    "@types/node": "^18.11.10",
     "@yukiniro/eslint-config": "^0.0.3",
     "eslint": "^8.11.0",
     "husky": "^8.0.1",
