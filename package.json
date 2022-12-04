@@ -1,6 +1,6 @@
 {
   "name": "cranch",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "Craete branch with a random name",
   "main": "dist/cranch.cjs",
   "module": "dist/cranch.mjs",
@@ -28,7 +28,8 @@
   },
   "dependencies": {
     "chalk": "4.1.2",
-    "commander": "^9.4.1"
+    "commander": "^9.4.1",
+    "nanoid": "^4.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",

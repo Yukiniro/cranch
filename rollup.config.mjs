@@ -13,7 +13,7 @@ const baseOutputConfig = {
 
 function getConfig(libraryName) {
   return {
-    external: ["commander", "chalk"],
+    external: ["commander", "chalk", "nanoid"],
     input: "src/index.ts",
     output: [
       {
