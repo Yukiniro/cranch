@@ -9,9 +9,6 @@
     "build": "rollup -c rollup.config.mjs",
     "lint": "npx eslint src/**",
     "prettier": "npx prettier src/** --write && npx prettier __test__/** --write",
-    "test": "npx vitest",
-    "test:run": "npx vitest run",
-    "test:coverrage": "npx vitest --coverage",
     "publish": "npm run test:run && npm run build && npm publish",
     "prepare": "npx husky install"
   },
