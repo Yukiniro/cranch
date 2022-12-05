@@ -1,9 +1,9 @@
 {
   "name": "cranch",
-  "version": "0.0.1",
+  "version": "0.1.2",
   "description": "Craete branch with a random name",
-  "main": "dist/cranch.cjs",
-  "module": "dist/cranch.mjs",
+  "main": "dist/cranch.js",
+  "type": "module",
   "types": "dist/src/index.d.ts",
   "scripts": {
     "build": "rollup -c rollup.config.mjs",
@@ -17,14 +17,20 @@
     "checkout",
     "branch"
   ],
+  "files": [
+    "dist"
+  ],
   "author": "Yukiniro",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/Yukiniro/cranch"
   },
+  "engines": {
+    "node": ">=14"
+  },
   "dependencies": {
-    "chalk": "4.1.2",
+    "chalk": "5.1.2",
     "commander": "^9.4.1",
     "nanoid": "^4.0.0"
   },

@@ -4,7 +4,7 @@ import { name, version } from "../package.json";
 import { program } from "commander";
 import { nanoid } from "nanoid";
 import { execSync } from "child_process";
-const chalk = require("chalk");
+import chalk from "chalk";
 
 program
   .name(name)

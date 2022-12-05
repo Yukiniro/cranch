@@ -19,7 +19,7 @@ function getConfig(libraryName) {
       {
         ...baseOutputConfig,
         file: `./dist/${libraryName}.js`,
-        format: "cjs",
+        format: "es",
       },
     ],
     plugins: [
