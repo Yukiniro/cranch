@@ -1,6 +1,6 @@
 {
   "name": "cranch",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Craete branch with a random name",
   "main": "dist/cranch.js",
   "type": "module",

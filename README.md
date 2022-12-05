@@ -1,6 +1,6 @@
 # cranch
 
-![NPM](https://img.shields.io/npm/l/ssprojet?color=blue&style=flat-square) ![npm](https://img.shields.io/npm/v/ssprojet?color=blue&style=flat-square)
+![NPM](https://img.shields.io/npm/l/cranch?color=blue&style=flat-square) ![npm](https://img.shields.io/npm/v/cranch?color=blue&style=flat-square)
 
 ## Intro
 
