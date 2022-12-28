@@ -24,7 +24,7 @@ cranch
 
 `cranch` support some option to create a prefix name.
 
-```shel
+```shell
 cranch -f
 ```
 
@@ -32,15 +32,7 @@ It will checkout a branch named `feat-xxxxxx`.
 
 ### -f or --feat
 
-```shel
-cranch [-f --feat]
-```
-
-`feat-xxxxxx`
-
-### -f or --feat
-
-```shel
+```shell
 cranch [-f --feat]
 ```
 
@@ -48,7 +40,7 @@ cranch [-f --feat]
 
 ### -fi or --fix
 
-```shel
+```shell
 cranch [-fi --fix]
 ```
 
@@ -56,7 +48,7 @@ cranch [-fi --fix]
 
 ### -d or --doc
 
-```shel
+```shell
 cranch [-d --doc]
 ```
 
@@ -64,7 +56,7 @@ cranch [-d --doc]
 
 ### -s or --style
 
-```shel
+```shell
 cranch [-s --style]
 ```
 
@@ -72,7 +64,7 @@ cranch [-s --style]
 
 ### -r or --refactor
 
-```shel
+```shell
 cranch [-r --refactor]
 ```
 
@@ -80,7 +72,7 @@ cranch [-r --refactor]
 
 ### -p or --perf
 
-```shel
+```shell
 cranch [-f --perf]
 ```
 
@@ -88,7 +80,7 @@ cranch [-f --perf]
 
 ### -t or --test
 
-```shel
+```shell
 cranch [-t --test]
 ```
 
@@ -96,7 +88,7 @@ cranch [-t --test]
 
 ### -c or --chore
 
-```shel
+```shell
 cranch [-c --chore]
 ```
 
@@ -104,7 +96,7 @@ cranch [-c --chore]
 
 ### -r or --revert
 
-```shel
+```shell
 cranch [-r --revert]
 ```
 
