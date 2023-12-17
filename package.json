@@ -25,7 +25,10 @@
     "test": "pnpm lint && pnpm test:types && vitest run --coverage",
     "test:types": "tsc --noEmit --skipLibCheck"
   },
-  "bin": "dist/cranch.js",
+  "bin": {
+    "c": "dist/index.mjs",
+    "cranch": "dist/index.mjs"
+  },
   "keywords": [
     "checkout",
     "branch"
