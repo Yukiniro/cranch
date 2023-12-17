@@ -2,3 +2,6 @@ dist
 __test__
 node_modules
 website
+coverage
+.vscode
+dist

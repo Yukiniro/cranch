@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.2.1
+
+[compare changes](https://github.com/Yukiniro/cranch/compare/v0.1.5...v0.2.1)
+
+### 🏡 Chore
+
+- Update lint and test ([5a1e2e9](https://github.com/Yukiniro/cranch/commit/5a1e2e9))
+
+### ❤️ Contributors
+
+- Yukiniro ([@Yukiniro](http://github.com/Yukiniro))
+
 ## v0.2.0
 
 [compare changes](https://github.com/Yukiniro/cranch/compare/v0.1.5...v0.2.0)
