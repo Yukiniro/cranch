@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
     "target": "ESNext",
+    "module": "ESNext", // 添加这一行
     "moduleResolution": "node",
     "declaration": true,
     "types": ["node"],
     "lib": ["ESNext"],
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true
-  }
+  },
+  "include": ["src"]
 }

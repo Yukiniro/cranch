@@ -1,9 +1,9 @@
 #! /usr/bin/env node
 
-import { name, version } from "../package.json";
+import { execSync } from "node:child_process";
 import { program } from "commander";
-import { execSync } from "child_process";
 import chalk from "chalk";
+import { name, version } from "../package.json";
 import { generateGitBranchName } from "./utils";
 
 program
