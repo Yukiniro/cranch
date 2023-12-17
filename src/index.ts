@@ -2,9 +2,9 @@
 
 import { name, version } from "../package.json";
 import { program } from "commander";
-import { nanoid } from "nanoid";
 import { execSync } from "child_process";
 import chalk from "chalk";
+import { generateGitBranchName } from "./utils";
 
 program
   .name(name)
@@ -24,7 +24,7 @@ program
   .option("-r, --revert", "checkout a branch with with revert prefix name")
   .action((options) => {
     const type = Object.keys(options)[0];
-    const id = nanoid(8);
+    const id = generateGitBranchName();
     const branchName = type ? `${type}-${id}` : id;
     execSync(`git checkout -b ${branchName}`);
     console.log(chalk.blue(`Checkout ${branchName} success.`));

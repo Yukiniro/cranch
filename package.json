@@ -2,16 +2,28 @@
   "name": "cranch",
   "version": "0.1.4",
   "description": "Craete branch with a random name",
-  "main": "dist/cranch.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "type": "module",
-  "types": "dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
   "scripts": {
-    "build": "rollup -c rollup.config.mjs",
-    "lint": "npx eslint src/**",
+    "build": "unbuild",
+    "dev": "vitest dev",
+    "lint": "eslint --cache --ext .ts,.js,.mjs,.cjs . && prettier -c src test",
+    "lint:fix": "eslint --cache --ext .ts,.js,.mjs,.cjs . --fix && prettier -c src test -w",
     "prettier": "npx prettier src/** --write && npx prettier __test__/** --write",
     "publish": "npm run build && npm publish",
-    "prepare": "npx husky install",
-    "unprepare": "pnpm uninstall husky && git config --unset core.hooksPath"
+    "prepack": "pnpm run build",
+    "release": "pnpm test && changelogen --release && npm publish && git push --follow-tags",
+    "test": "pnpm lint && pnpm test:types && vitest run --coverage",
+    "test:types": "tsc --noEmit --skipLibCheck"
   },
   "bin": "dist/cranch.js",
   "keywords": [
@@ -47,6 +59,8 @@
     "@rollup/plugin-typescript": "^8.3.1",
     "@types/node": "^18.11.10",
     "@yukiniro/eslint-config": "^0.0.3",
+    "@vitest/coverage-v8": "^1.0.1",
+    "changelogen": "^0.5.5",
     "eslint": "^8.11.0",
     "lint-staged": "^13.0.3",
     "prettier": "^2.6.0",
@@ -57,6 +71,7 @@
     "rollup-plugin-typescript2": "^0.31.2",
     "tslib": "^2.3.1",
     "typescript": "^4.6.4",
-    "vitest": "^0.24.3"
+    "unbuild": "^2.0.0",
+    "vitest": "^1.0.1"
   }
 }
