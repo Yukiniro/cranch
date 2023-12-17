@@ -21,7 +21,7 @@ program
   .option("-p, --perf", "checkout a branch with with perf prefix name")
   .option("-t, --test", "checkout a branch with with test prefix name")
   .option("-c, --chore", "checkout a branch with with chore prefix name")
-  .option("-r, --revert", "checkout a branch with with revert prefix name")
+  .option("-rv, --revert", "checkout a branch with with revert prefix name")
   .action((options) => {
     const type = Object.keys(options)[0];
     const id = generateGitBranchName();
