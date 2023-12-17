@@ -1,6 +1,6 @@
 {
   "name": "cranch",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "Craete branch with a random name",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
@@ -19,9 +19,8 @@
     "lint": "eslint --ext .ts,.js,.mjs,.cjs . && prettier -c src",
     "lint:fix": "eslint --ext .ts,.js,.mjs,.cjs . --fix && prettier -c src -w",
     "prettier": "npx prettier src/** --write",
-    "publish": "npm run build && npm publish",
     "prepack": "pnpm run build",
-    "release": "pnpm test && changelogen --release && npm publish && git push --follow-tags",
+    "release": "pnpm test && npm publish && git push --follow-tags",
     "test": "pnpm lint && pnpm test:types && vitest run --coverage",
     "test:types": "tsc --noEmit --skipLibCheck"
   },
